@@ -1,0 +1,46 @@
+<--Symbol table-->
+EntryNumber    Name           SectionNumber  Value          Scope          
+0              UND            0              0              EXTERN         
+1              text0          1              0              LOCAL          
+2              a              1              15             LOCAL          
+3              b              1              17             LOCAL          
+4              text1          2              0              LOCAL          
+5              c              2              0              LOCAL          
+6              d              2              2              LOCAL          
+
+
+<--Section table-->
+EntryNumber    Name           Length         SymbolEntryNumber
+0              UND            0              0              
+1              text0          19             1              
+2              text1          19             4              
+
+
+<--Section 'text0'-->
+
+Offset         RelocationType Value          
+3              R_386_16       4              
+7              R_386_16       4              
+b              R_386_PC16     4              
+13             R_386_16       4              
+
+64 20 80 02 00 2c 00 02
+00 64 6e fe ff 80 10 00
+64 46 80 02 00 aa 00 bb
+00 
+
+
+<--Section 'text1'-->
+
+Offset         RelocationType Value          
+7              R_386_16       1              
+b              R_386_16       1              
+f              R_386_PC16     1              
+17             R_386_16       1              
+
+cc 00 dd 00 64 20 80 15
+00 2c 00 17 00 64 6e 13
+00 80 10 00 64 46 80 17
+00 
+
+
